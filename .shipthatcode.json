@@ -1,0 +1,50 @@
+{
+  "course": "sql-fundamentals",
+  "language": "sql",
+  "language_id": 82,
+  "entrypoint": "main.sql",
+  "version": 1,
+  "content_hash": "f89deecc6df13c29",
+  "lessons": [
+    {
+      "slug": "hello-sql",
+      "tests_hash": "3505c2224fe4"
+    },
+    {
+      "slug": "columns",
+      "tests_hash": "3505c2224fe4"
+    },
+    {
+      "slug": "tables",
+      "tests_hash": "4744401a85f2"
+    },
+    {
+      "slug": "where",
+      "tests_hash": "15301787eeec"
+    },
+    {
+      "slug": "ordering",
+      "tests_hash": "a62c1233dff0"
+    },
+    {
+      "slug": "aggregates",
+      "tests_hash": "37500f3b75d1"
+    },
+    {
+      "slug": "joins",
+      "tests_hash": "b04315fe9345"
+    },
+    {
+      "slug": "dml",
+      "tests_hash": "04c58b9db4d8"
+    },
+    {
+      "slug": "constraints",
+      "tests_hash": "d9e5446b754b"
+    },
+    {
+      "slug": "nulls",
+      "tests_hash": "0b4abc52c6f9"
+    }
+  ]
+}
