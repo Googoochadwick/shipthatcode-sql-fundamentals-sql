@@ -1,1 +1,2 @@
-select 'Hello, SQL!';
+-- SELECT '...' || ... ;
+select 'hello! ' // 'SQL!';
