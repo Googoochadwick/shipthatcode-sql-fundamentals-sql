@@ -6,4 +6,4 @@ INSERT INTO cities VALUES ('Kyoto', 'Japan');
 INSERT INTO cities VALUES ('Cairo', 'Egypt');
 
 -- SELECT name FROM cities WHERE ...
-select name from cities where contry = 'Japan';
+select name from cities where country = 'Japan';
