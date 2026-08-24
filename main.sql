@@ -4,4 +4,4 @@ INSERT INTO cities VALUES ('Paris', 'France');
 INSERT INTO cities VALUES ('Cairo', 'Egypt');
 
 -- write your SELECT here
-select cities from cities;
+select name from cities;
