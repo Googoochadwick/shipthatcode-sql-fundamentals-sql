@@ -1,9 +1,9 @@
-CREATE TABLE cities (name TEXT, country TEXT);
-INSERT INTO cities VALUES ('Tokyo', 'Japan');
-INSERT INTO cities VALUES ('Paris', 'France');
-INSERT INTO cities VALUES ('Osaka', 'Japan');
-INSERT INTO cities VALUES ('Kyoto', 'Japan');
-INSERT INTO cities VALUES ('Cairo', 'Egypt');
+CREATE TABLE mountains (name TEXT, height_m INTEGER);
+INSERT INTO mountains VALUES ('Everest', 8848);
+INSERT INTO mountains VALUES ('K2', 8611);
+INSERT INTO mountains VALUES ('Denali', 6190);
+INSERT INTO mountains VALUES ('Kilimanjaro', 5895);
+INSERT INTO mountains VALUES ('Kangchenjunga', 8586);
 
--- SELECT name FROM cities WHERE ...
-select name from cities where country = 'Japan';
+-- SELECT name FROM mountains ORDER BY ... LIMIT ...
+select name from mountains order by height_m limit 3;
