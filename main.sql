@@ -6,5 +6,5 @@ INSERT INTO users VALUES
 
 -- TODO: one line per user, in id order: their nickname when they have one,
 --       otherwise their name. One column, and no blanks in the output.
-SELECT nickname, COALESCE(name, 'anonymous') AS display
+SELECT COALESCE(nickname, name, 'anonymous') AS display
 FROM users;
