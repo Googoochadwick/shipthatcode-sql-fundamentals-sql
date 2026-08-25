@@ -13,7 +13,7 @@
 create table users(
     id integer primary key,
     email text unique,
-    age integer (age >= 0 and age < 150),
+    age INTEGER CHECK (age >= 0 AND age < 150),
     role text default = 'member',
 );
 
