@@ -12,11 +12,11 @@
 
 create table users(
     id integer primary key,
-    email text unique,
+    email text not null unique,
     age INTEGER CHECK (age >= 0 AND age < 150),
-    role text default = 'member',
+    role text not null default = 'member',
 );
 
-insert into users (id, email, age) values (id 1, ada@x.io, age 36);
-insert into users (id, email, age, role) values (id 2, bob@x.io, age 50, 'admin');
+insert into users (id, email, age) values (1, ada@x.io,36);
+insert into users (id, email, age, role) values (2, bob@x.io,50, 'admin');
 select * from users order by id;
