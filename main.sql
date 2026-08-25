@@ -1,9 +1,9 @@
-CREATE TABLE mountains (name TEXT, height_m INTEGER);
-INSERT INTO mountains VALUES ('Everest', 8848);
-INSERT INTO mountains VALUES ('K2', 8611);
-INSERT INTO mountains VALUES ('Denali', 6190);
-INSERT INTO mountains VALUES ('Kilimanjaro', 5895);
-INSERT INTO mountains VALUES ('Kangchenjunga', 8586);
+CREATE TABLE products (category TEXT, price INTEGER);
+INSERT INTO products VALUES ('food', 10);
+INSERT INTO products VALUES ('tech', 500);
+INSERT INTO products VALUES ('food', 25);
+INSERT INTO products VALUES ('tech', 1500);
+INSERT INTO products VALUES ('book', 30);
 
--- SELECT name FROM mountains ORDER BY ... LIMIT ...
-select name from mountains order by height_m desc limit 3;
+-- SELECT ... FROM products GROUP BY ... ORDER BY ...
+select category, sum(price) as total from products group by category order by category; 
