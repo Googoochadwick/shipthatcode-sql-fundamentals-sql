@@ -6,4 +6,4 @@ INSERT INTO mountains VALUES ('Kilimanjaro', 5895);
 INSERT INTO mountains VALUES ('Kangchenjunga', 8586);
 
 -- SELECT name FROM mountains ORDER BY ... LIMIT ...
-select name from mountains order by height_m asc limit 3;
+select name from mountains order by height_m desc limit 3;
