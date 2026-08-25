@@ -18,5 +18,5 @@ create table users(
 );
 
 insert into users (id, email, age) values (1, 'ada@x.io',36);
-insert into users (id, email, age, role) values (2, 'bob@x.io,50', 'admin');
+insert into users (id, email, age, role) values (2, 'bob@x.io',50, 'admin');
 select * from users order by id;
