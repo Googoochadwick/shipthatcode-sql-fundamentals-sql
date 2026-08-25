@@ -14,7 +14,7 @@ create table users(
     id integer primary key,
     email text not null unique,
     age INTEGER CHECK (age >= 0 AND age < 150),
-    role text not null default = 'member'
+    role text not null default 'member'
 );
 
 insert into users (id, email, age) values (1, 'ada@x.io',36);
