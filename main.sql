@@ -1,11 +1,10 @@
-CREATE TABLE authors (id INTEGER, name TEXT);
-CREATE TABLE books (title TEXT, author_id INTEGER);
+CREATE TABLE employees (name TEXT, salary INTEGER);
+INSERT INTO employees VALUES
+    ('Ada', 95000),
+    ('Bob', 50000),
+    ('Carol', 80000),
+    ('Dan', 55000);
 
-INSERT INTO authors VALUES (1, 'Asimov'), (2, 'Le Guin'), (3, 'Tolkien');
-INSERT INTO books VALUES
-    ('Foundation', 1),
-    ('Lord of the Rings', 3),
-    ('Hobbit', 3),
-    ('Dispossessed', 2);
-
-SELECT b.title, a.name FROM books b JOIN authors a ON a.id = b.author_id ORDER BY b.title;
+update employees set salary = 90000 where name = 'Bob';
+delete from employees where name = 'Carol'; 
+select * from employees order by name;
